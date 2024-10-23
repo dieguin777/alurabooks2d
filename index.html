@@ -56,26 +56,51 @@
     <section class="carrossel">
         <h2 class="carrossel-titulo"> Novos lançamentos</h2>
         <div class="swiper">
+
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              ...
+                <div class="swiper-pagination"></div>
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./img/Acessibilidade.png" alt="Livro Acessibilidade "></div>
+                <div class="swiper-slide"><img src="./img/Arquitetura.png" alt="Livro Arquitetura"></div>
+                <div class="swiper-slide"><img src="./img/Gestão.png" alt="Livro Gestão"></div>
+                <div class="swiper-slide"><img src="./img/Angular.png" alt="livro Angular"></div>
+                <div class="swiper-slide"><img src="./img/ApacheKafka.png" alt="livro ApacheKafka"></div>
+                ...
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-          
+
+
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-          
+
             <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
+
+        </div>
+        <div class="card">
+            <div class="card-descricao">
+                <div class="descricao">
+                </div>
+                <h3 class="descricao-titullo">talves você se interesse...</h3>
+                <h2 class="descricao-titulo-livro"> angular e firebase</h2>
+                <p class="descricao-texto">construindo aplicação integrada </p>
+            </div>
+            <img src="./img/Angular.png" class="descricao-imagem">
+
+        </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            Pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
 </body>
 
 </html>
